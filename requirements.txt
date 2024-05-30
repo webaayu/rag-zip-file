@@ -1,6 +1,6 @@
 pysqlite3-binary>=0.4.6
 chromadb
-langchain-community
+-U langchain-community
 transformers	
 tiktoken
 sentence-transformers
