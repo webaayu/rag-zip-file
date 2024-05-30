@@ -7,4 +7,3 @@ langchain-text-splitters
 streamlit
 PyMuPDF
 langchain
-zipfile
