@@ -1,13 +1,20 @@
+import os
 import streamlit as st
 import fitz  # PyMuPDF
 import zipfile
 import io
-import os
 from langchain.llms import Ollama
 from langchain.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from bs4 import BeautifulSoup
+
+# Ensure pysqlite3 is imported and used
+import pysqlite3
+import pysqlite3.dbapi2 as sqlite3
+
+# Set environment variable to ensure the correct SQLite3 library is used
+os.environ["SQLITE_LIBRARY_PATH"] = pysqlite3.__file__
 
 # Get response from llm
 def get_llm_response(input, content, prompt):
