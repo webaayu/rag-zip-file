@@ -7,3 +7,4 @@ langchain-text-splitters
 streamlit
 PyMuPDF
 langchain
+bs4
