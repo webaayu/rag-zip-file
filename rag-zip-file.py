@@ -9,8 +9,10 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from bs4 import BeautifulSoup
 
-# Ensure pysqlite3 is imported
-import pysqlite3 as sqlite3
+# Ensure pysqlite3 is imported and used
+import pysqlite3
+import pysqlite3.dbapi2 as sqlite3
+pysqlite3.connect(':memory:')  # test to force the library to load
 
 # Get response from llm
 def get_llm_response(input, content, prompt):
