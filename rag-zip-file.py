@@ -9,6 +9,9 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from bs4 import BeautifulSoup
 
+# Ensure pysqlite3 is imported
+import pysqlite3 as sqlite3
+
 # Get response from llm
 def get_llm_response(input, content, prompt):
     # loading llama2 model
