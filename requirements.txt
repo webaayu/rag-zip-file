@@ -1,0 +1,10 @@
+chromadb
+langchain-community
+transformers	
+tiktoken
+sentence-transformers
+langchain-text-splitters
+streamlit
+PyMuPDF
+langchain
+zipfile
